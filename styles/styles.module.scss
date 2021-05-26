@@ -1,0 +1,119 @@
+$primary-color: #1d3557;
+$error-color: #e63946;
+$bg-color: #f1faee;
+$text-color: #293241;
+$color-white: #fff;
+
+$border-radius: 4px;
+
+.container {
+  padding: 3rem;
+  width: 600px;
+  border-radius: $border-radius;
+
+  .formCard {
+    border: 2px solid rgba(29, 53, 87);
+    padding: 2rem;
+    border-radius: $border-radius;
+    box-shadow: 0 0 #0000, 0 25px 50px -12px rgba(0, 0, 0, 0.25), 0 0 #0000;
+    background: white;
+  }
+
+  h1 {
+    font-size: 2rem;
+    color: $text-color;
+    margin-bottom: 2rem;
+  }
+
+  h2 {
+    color: $text-color;
+    margin-bottom: 1rem;
+  }
+
+  label,
+  input {
+    color: $text-color;
+  }
+
+  label {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  input {
+    border: 2px solid rgba($primary-color, 0.8);
+    border-radius: $border-radius;
+    padding: 0.5rem 1rem;
+    padding-left: 1rem;
+    font-size: 1rem;
+  }
+
+  .formRow {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+  }
+
+  button:not(.back) {
+    color: $color-white;
+    width: 100%;
+    font-size: 1.4rem;
+    background: $primary-color;
+    border-radius: $border-radius;
+    border: none;
+    cursor: pointer;
+    padding: 0.8rem 1.2rem;
+    margin-top: 0.5rem;
+
+    &:hover {
+      background: rgba($primary-color, 0.8);
+    }
+  }
+
+  button.back {
+    margin-right: 1rem;
+    padding: 0.3rem;
+    cursor: pointer;
+  }
+
+  .input-error {
+    border-color: $error-color;
+  }
+
+  .error {
+    color: $error-color;
+    font-size: 1rem;
+    margin-top: 0.3rem;
+  }
+
+  .disabled-btn {
+    cursor: not-allowed;
+    background: rgba($primary-color, 0.8);
+  }
+
+  input[type="checkbox"] {
+    margin-right: 0.7rem;
+  }
+
+  .steps {
+    display: inline-block;
+    margin-bottom: 1rem;
+    color: $text-color;
+    font-size: 1.2rem;
+  }
+
+  .errorText {
+    color: $error-color;
+    font-size: 1.2rem;
+    margin-top: 0.4rem;
+    display: inline-block;
+  }
+
+  .hideForm {
+    display: none;
+  }
+
+  .showForm {
+    display: block;
+  }
+}
